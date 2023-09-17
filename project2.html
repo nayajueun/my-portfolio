@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Ray Casting and Rendering</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Jueun's Portfolio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-shrink-0">
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder">Ray Casting and Rendering with Geometric Objects</h1>
+                </div>
+                <h2>Overview:</h2>
+                <p>I created a renderer capable of handling input geometric objects and light sources, and subsequently outputting a rendered image. The objects were presented in code format, like:</p>
+
+                <h2>Technical Details:</h2>
+                <ul>
+                    <li><strong>Coordinate System:</strong> The graphics application utilized a right-handed coordinate system. Here, the x-axis ran from left to right, y-axis pointed downwards, and the z-axis, rather uniquely, pointed into the screen. This positioning implies the viewer faces positive z.</li>
+                    <li><strong>Rendering Process:</strong> For every pixel, a ray was cast from the camera, pinpointing the first intersection it made with the scene's geometry. The pixel's color was determined by the interplay of given light sources at the point of intersection and in accordance with the Phong Lighting Model.</li>
+                    <li><strong>Implementation & Results:</strong> Utilizing the Phong Lighting Model, an advanced technique in computer graphics, the project achieved realistic shading effects for both the triangle and sphere. This model provides an empirical model of local illumination, lending to the visual depth and nuanced lighting details in the final render.</li>
+
+                </ul>
+
+                <h2>Outcome:</h2>
+                <p>The outcome, a rendered image of intricate geometric shapes with realistic lighting, stands as a testament to the robustness of the implemented techniques and the potential of ray casting in computer graphics.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

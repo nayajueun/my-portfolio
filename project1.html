@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>HR & Manpower Analytics Web Application Project</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100 bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Jueun's Portfolio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-shrink-0">
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder">HR & Manpower Analytics Web Application Project</h1>
+                </div>
+                <h2>Overview:</h2>
+                <p>The company expressed a pressing need to revolutionize their HR and manpower analytics. Initially, an executable was developed using Python's Tkinter library to meet these requirements. The success and proficiency of this solution brought forth an additional request: a more flexible, user-friendly web application to further optimize their data entry and analytics processes.</p>
+
+                <h2>Project Objectives:</h2>
+                <ul>
+                    <li>Transition from a desktop executable to a fully functional web application.</li>
+                    <li>Implement a digital logging system, eliminating manual data entry and subsequently reducing labor costs.</li>
+                    <li>Ensure the application is intuitive and user-friendly, catering to individuals without a technical background.</li>
+                    <li>Optimize for multiple devices, including desktop and iPad, to maximize accessibility and ease of use.</li>
+                </ul>
+
+                <h2>Technical Implementation:</h2>
+                <ul>
+                    <li><strong>Platform & Backend Framework:</strong> Flask was chosen for its versatility, ease of use, and compatibility with various extensions.</li>
+                    <li><strong>User Authentication:</strong> A user authentication system was built to differentiate between worker and admin roles, ensuring data security and role-specific functionalities.</li>
+                    <li><strong>Data Management:</strong> PostgreSQL, in combination with SQLAlchemy. This decision hinged on PostgreSQL's enhanced scalability and robustness, making it ideal for the deployment scenario in this web application.</li>
+                    <li><strong>Data Analytics Tool:</strong> For robust data analysis, data from SQLAlchemy was seamlessly converted to pandas dataframes. This allowed for more advanced data manipulations and insights to be derived from the stored information.</li>
+                    <li><strong>User Interface & Experience:</strong> Leveraging Bootstrap, the application was designed to be mobile-responsive, ensuring a consistent experience across devices. This consideration was crucial as supervisors were expected to access the application via iPads.</li>
+                    <li><strong>Testing:</strong> Comprehensive multi-device testing was conducted to assure functionality and optimize the user experience.</li>
+                </ul>
+
+                <h2>Outcome & Feedback:</h2>
+                <p>The application was deployed to an external server and functions with user authentication. It improved data logging and analytics efficiency while significantly cutting labor costs by automating formerly manual data analysis for quotations and contract creations. The successful launch of both the executable and the web application deepened our relationship with the company, evident from their positive feedback and ongoing collaboration requests.</p>
+<!--                <h2>Conclusion:</h2>-->
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
